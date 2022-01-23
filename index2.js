@@ -15,7 +15,11 @@ class Contenedor{
         .catch(err => {
             console.log (err)
         })        
-        console.log (this.aux_array);
+        console.log ((this.aux_array).toString());
+        console.log ('length '+this.aux_array.length);
+
+
+
         try {
             await fs.promises.writeFile(`${this.location}`,JSON.stringify(this.aux_array[0],null,2))
             console.log('guardado con exito');
