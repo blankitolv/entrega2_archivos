@@ -1,0 +1,20 @@
+[
+     {
+          "id":"41",
+          "keyCode":"ESCAPE",
+          "comment":"scape",
+          "ekey":["Escape"]
+     },
+     {
+          "id":"58",
+          "keyCode":"F1",
+          "comment":"f1",
+          "ekey":["F1"]
+     },
+     {
+          "id":"59",
+          "keyCode":"F2",
+          "comment":"f2",
+          "ekey":["F2"]
+     }
+]
