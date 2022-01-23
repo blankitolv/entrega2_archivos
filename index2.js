@@ -16,6 +16,16 @@ class Contenedor{
             console.log (err)
         })        
         console.log (this.aux_array);
+        try {
+            await fs.promises.writeFile(`${this.location}`,JSON.stringify(this.aux_array[0],null,2))
+            console.log('guardado con exito');
+            console.log (this.aux_array[0])
+            this.aux_array.pop();
+        }
+        catch(err){
+            console.log ('errrrrrr'+err)
+        }
+
     }
 }
 const name='\\productos.txt'
